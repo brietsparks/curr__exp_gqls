@@ -1,26 +1,34 @@
 const typeDefs = `
   type Query {
-    history(userId: String!): [Project] 
+    history(user_id: String!): [Project] 
   }
   
   type Project {
     id: Int!
-    userId: String!
-    parentId: Int
+    user_id: String!
+    parent_id: Int
     title: String
     contributions: [Contribution]
   }
   
   type Contribution {
     id: Int!
-    parentId: Int
-    shortSummary: String
+    parent_id: Int
+    short_summary: String
     skills: [Skill]
+    samples: [Sample]
+  }
+  
+  type Sample {
+    id: Int!
+    contribution_id: Int
+    value: String
   }
   
   type Skill {
-    id: Int!,
-    canonicalName: String 
+    id: Int!
+    contribution_id: Int
+    canonical_name: String 
   }
 `;
 

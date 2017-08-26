@@ -1,1 +1,0 @@
-const ProjectDeserializer = (data)

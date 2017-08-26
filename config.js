@@ -5,6 +5,7 @@ const graphqlEndpointPath = '/graphql';
 const graphqlUrl = appUrl + graphqlEndpointPath;
 
 const historyServiceUrl = 'http://localhost:5000';
+const skillServiceUrl = '';
 
 module.exports = {
   host,
@@ -13,5 +14,6 @@ module.exports = {
   graphqlEndpointPath,
   graphqlUrl,
 
-  historyServiceUrl
+  historyServiceUrl,
+  skillServiceUrl
 };
